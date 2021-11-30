@@ -1,12 +1,12 @@
 let args = process.argv.slice(2);
 args = args.map((item) => parseInt(item));
 
-const timer = function (numsArray) {
+const timer = function(numsArray) {
   if (numsArray.length === 0) {
     return undefined;
   }
 
-  const recursiveTimer = function (num) {
+  const recursiveTimer = function(num) {
     setTimeout(() => {
       if (num !== 0) {
         return recursiveTimer(num - 1);
